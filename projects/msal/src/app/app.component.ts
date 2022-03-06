@@ -7,7 +7,7 @@ import { filter, takeUntil } from 'rxjs/operators';
 @Component({
   selector: 'msal-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
   title = 'Angular 12 - Angular v2 Sample';

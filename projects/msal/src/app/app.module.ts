@@ -26,9 +26,9 @@ export function MSALInstanceFactory(): IPublicClientApplication {
   return new PublicClientApplication({
     auth: {
       clientId: 'be6b3b32-b818-4cd0-84a9-ad336a974170',
-      authority: 'https://login.micorosoftonline.com/233da5c5-abac-4cf6-909d-7f1cd477688c',
-      redirectUri: 'http://localhost:4200',
-      knownAuthorities: ['https://login.micorosoftonline.com/233da5c5-abac-4cf6-909d-7f1cd477688c']
+      authority: 'https://login.microsoftonline.com/233da5c5-abac-4cf6-909d-7f1cd477688c',
+      redirectUri: 'http://localhost:4200/',
+      knownAuthorities: ['https://login.microsoftonline.com/233da5c5-abac-4cf6-909d-7f1cd477688c']
     },
     cache: {
       cacheLocation: BrowserCacheLocation.LocalStorage,
@@ -41,7 +41,7 @@ export function MSALInstanceFactory(): IPublicClientApplication {
         piiLoggingEnabled: false
       }
     }
-  }); 
+  });
 }
 
 export function MSALInterceptorConfigFactory(): MsalInterceptorConfiguration {
